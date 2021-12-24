@@ -1,0 +1,145 @@
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  max-width: 20%;
+  height: 100%;
+  border: 1px solid #495057;
+}
+#navbar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#navbar li {
+  border-top: 1px solid #495057;
+  text-align: inherit;
+  padding-top: 14px;
+  padding-left: 17px;
+  padding-bottom: 12px;
+}
+#navbar a {
+  color: #495057;
+}
+
+.main-section {
+  color: #495057;
+}
+
+#navbar a {
+  text-decoration: none;
+}
+#navbar a:hover {
+  text-decoration: underline;
+  color: #2B3035;
+  scale: 1.2x;
+}
+
+header {
+  font-size: 1.6rem;
+  color: #212529;
+  max-width: 100%;
+  padding-top: 2px;
+  padding-left: 7px;
+  font-family: zillaslab, palatino, "Palatino Linotype", serif;
+}
+
+#main-doc {
+  margin-left: 300px;
+  line-height: 1.4rem;
+}
+
+.section-centent {
+  padding-left: 20px;
+}
+
+.code-wrapper {
+  padding-top: 16px;
+  padding-left: 22px;
+  padding-bottom: 16px;
+  background-color: #DEE2E6;
+  color: #905;
+  border-radius: 6px;
+  font-family: consolas, "Liberation Mono", courier, monospace;
+  font-size: 1rem;
+  line-height: 1.4;
+  letter-spacing: -0.0027777778rem;
+  text-rendering: optimizeSpeed;
+}
+
+.main-section {
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    font-size: 1.424rem;
+    font-family: zillaslab, palatino, "Palatino Linotype", serif;
+    font-weight: 400;
+    color: #00458b;
+  }
+
+  /* For mobile phones: */
+  #navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    min-width: 100%;
+    max-height: 275px;
+    height: 100%;
+    border: none;
+  }
+  #navbar header {
+    color: black;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.8em;
+    padding-top: 19px;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-top: 300px;
+    margin-left: 0px;
+    padding-top: 11px;
+  }
+
+  #navbar {
+    background-color: #83d0f2;
+  }
+  #navbar ul {
+    background-color: #83d0f2;
+    border: 1px solid;
+    height: 207px;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    color: #4d4e53;
+    font-family: "Open Sans", Arial, sans-serif;
+    line-height: 1.5;
+  }
+  #navbar li {
+    color: #4d4e53;
+    border-top: 1px solid;
+    list-style: none;
+    position: relative;
+    width: 100%;
+  }
+  #navbar a {
+    display: block;
+    padding: 10px 30px;
+    color: #4d4e53;
+    text-decoration: none;
+    cursor: pointer;
+    list-style: none;
+    font-family: "Open Sans", Arial, sans-serif;
+    line-height: 1.5;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
