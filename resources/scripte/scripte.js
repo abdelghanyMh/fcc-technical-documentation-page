@@ -9,7 +9,7 @@ function toggleMenu() {
         toggleButton.firstChild.innerHTML = '&#xef6d;'
 
         // hide menu
-        menu.style.width='0px';
+        menu.style.width = '0px';
     } else {
         toggleButton.classList.add("active");
         // adds the menu (close) icon
@@ -19,5 +19,26 @@ function toggleMenu() {
         menu.style.width = '100%';
     }
 }
-/* Event Listener */
-toggle.addEventListener("click", toggleMenu, false);
+
+/*add style to the clicked nav link  */
+// navItems = document.getElementsByClassName('nav-link')
+navItems = document.querySelectorAll('.nav-link')
+
+function styleNavItem(event) {
+     console.log(event.currentTarget);
+    navItems.forEach(item => {
+        if (item.classList.contains('active-nav-item'))
+            item.classList.remove('active-nav-item')
+    });
+
+    // add style 
+    event.currentTarget.classList.add('active-nav-item')
+  
+
+}
+/* Event Listeners */
+toggleButton.addEventListener("click", toggleMenu, false);
+// navItems.addEventListener("click", styleNavItem, false);
+navItems.forEach(item => {
+    item.addEventListener('click',styleNavItem,false)
+});

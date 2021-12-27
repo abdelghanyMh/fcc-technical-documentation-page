@@ -26,9 +26,9 @@
   font-size: 1.5rem;
   text-align: center;
 }
-#navbar .menu .nav-link {
-  text-decoration: none;
-  color: #1a1a1a;
+#navbar .menu .nav-link a {
+  text-decoration: none !important;
+  color: #1a1a1a !important;
 }
 #navbar .menu .nav-link:active {
   font-style: italic;
@@ -59,16 +59,12 @@
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 #toggle .material-icons {
-  font-size: 33px;
+  font-size: 2rem;
   padding: 16px;
   color: #1a1a1a;
 }
 #toggle .material-icons:active {
   box-shadow: none;
-}
-
-main {
-  pointer-events: none;
 }
 
 /*# sourceMappingURL=style.css.map */

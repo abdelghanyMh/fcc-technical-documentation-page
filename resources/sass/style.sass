@@ -1,8 +1,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@900&display=swap')
-// Mobile layout
 $dark: #1a1a1a
 $yellow: #dab200
+$fs-primary: 40px
+$fs-secondary: 2rem
+$fs-normal: 1rem
+
+// Mobile layout
+
 #navbar
   z-index: 999
 
@@ -10,7 +15,7 @@ $yellow: #dab200
   top: 0
   left: 0
 
-  width:0px
+  width: 0px
   height: 100vh
   background: white
 
@@ -27,7 +32,7 @@ $yellow: #dab200
     list-style-type: decimal
 
     // font-family: 'Fira Sans', sans-serif
-    font-size: 1rem
+    font-size: $fs-normal
 
     li
       margin: 10px
@@ -36,17 +41,19 @@ $yellow: #dab200
         list-style: none
         margin: 10px
 
-        font-size: 1.5rem
+        font-size: 1.5*$fs-normal
         text-align: center
     .nav-link
-      text-decoration: none
-      color: $dark
+      a
+        text-decoration: none !important
+        color: $dark !important
       &:active
         font-style: italic
         color: lighten($dark, 10%)
+
     .active-nav-item
       font-weight: 700
-      font-size: 1.1rem
+      font-size: 1.1*$fs-normal
       &::before
         content: ''
         width: 4px
@@ -70,16 +77,11 @@ $yellow: #dab200
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset
 
   .material-icons
-    font-size: 33px
+    font-size: $fs-secondary
     padding: 16px
     color: $dark
     &:active
       box-shadow: none
-
-main
-  // z-index: 1
-  // filter: blur(18px)
-  pointer-events: none
 
 //   // #navbar
 //   //   background-color: white
@@ -99,42 +101,42 @@ main
 //   //     font-size: 1.8em
 //   //     padding-top: 19px
 
-//   #main-doc
-//     position: relative
-//     margin-top: 300px
-//     margin-left: 0px
-//     padding-top: 11px
+  // #main-doc
+  //   position: relative
+  //   margin-top: 300px
+  //   margin-left: 0px
+  //   padding-top: 11px
 
-//   // #navbar
-//   //   background-color: #83d0f2
+  // // #navbar
+  // //   background-color: #83d0f2
 
-//   //   ul
-//   //     background-color: #83d0f2
-//   //     border: 1px solid
-//   //     height: 207px
-//   //     padding: 0
-//   //     overflow-y: auto
-//   //     overflow-x: hidden
-//   //     color: #4d4e53
-//   //     font-family: 'Open Sans', Arial, sans-serif
-//   //     line-height: 1.5
+  // //   ul
+  // //     background-color: #83d0f2
+  // //     border: 1px solid
+  // //     height: 207px
+  // //     padding: 0
+  // //     overflow-y: auto
+  // //     overflow-x: hidden
+  // //     color: #4d4e53
+  // //     font-family: 'Open Sans', Arial, sans-serif
+  // //     line-height: 1.5
 
-//   //   li
-//   //     color: #4d4e53
-//   //     border-top: 1px solid
-//   //     list-style: none
-//   //     position: relative
-//   //     width: 100%
+  // //   li
+  // //     color: #4d4e53
+  // //     border-top: 1px solid
+  // //     list-style: none
+  // //     position: relative
+  // //     width: 100%
 
-//   //   a
-//   //     display: block
-//   //     padding: 10px 30px
-//   //     color: #4d4e53
-//   //     text-decoration: none
-//   //     cursor: pointer
-//   //     list-style: none
-//   //     font-family: 'Open Sans', Arial, sans-serif
-//       // line-height: 1.5
+  // //   a
+  // //     display: block
+  // //     padding: 10px 30px
+  // //     color: #4d4e53
+  // //     text-decoration: none
+  // //     cursor: pointer
+  // //     list-style: none
+  // //     font-family: 'Open Sans', Arial, sans-serif
+  //     // line-height: 1.5
 // /* Tablet Layot */
 // @media all and (min-width: 700px)
 // /* Desktop Layout  */
