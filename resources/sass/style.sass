@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@900&display=swap')
 $dark: #1a1a1a
 $yellow: #dab200
+$ff-primary: cursive
+$ff-secondary: -webkit-pictograph
+
 $fs-primary: 40px
 $fs-secondary: 2rem
 $fs-normal: 1rem
@@ -83,127 +86,23 @@ $fs-normal: 1rem
     &:active
       box-shadow: none
 
-//   // #navbar
-//   //   background-color: white
-//   //   position: absolute
-//   //   top: 0
-//   //   padding: 0
-//   //   margin: 0
+main
+  padding: 10px
+  section
+    &::after
+      content: " "
+      display: block
+      border-bottom: 1px solid #ececec
+      padding-top: 44px
+      margin-bottom: 40px
+    header
+      font-family: $ff-primary
+      font-size: $fs-primary
+      margin-bottom: $fs-normal
+    & > *
+      font-family: $ff-secondary
+    li
+      line-height: 25px
+      letter-spacing: 0.13em
 
-//   //   max-height: 275px
-//   //   height: 100%
-//   //   border: none
 
-//   //   header
-//   //     color: black
-//   //     margin: 10px
-//   //     text-align: center
-//   //     font-size: 1.8em
-//   //     padding-top: 19px
-
-  // #main-doc
-  //   position: relative
-  //   margin-top: 300px
-  //   margin-left: 0px
-  //   padding-top: 11px
-
-  // // #navbar
-  // //   background-color: #83d0f2
-
-  // //   ul
-  // //     background-color: #83d0f2
-  // //     border: 1px solid
-  // //     height: 207px
-  // //     padding: 0
-  // //     overflow-y: auto
-  // //     overflow-x: hidden
-  // //     color: #4d4e53
-  // //     font-family: 'Open Sans', Arial, sans-serif
-  // //     line-height: 1.5
-
-  // //   li
-  // //     color: #4d4e53
-  // //     border-top: 1px solid
-  // //     list-style: none
-  // //     position: relative
-  // //     width: 100%
-
-  // //   a
-  // //     display: block
-  // //     padding: 10px 30px
-  // //     color: #4d4e53
-  // //     text-decoration: none
-  // //     cursor: pointer
-  // //     list-style: none
-  // //     font-family: 'Open Sans', Arial, sans-serif
-  //     // line-height: 1.5
-// /* Tablet Layot */
-// @media all and (min-width: 700px)
-// /* Desktop Layout  */
-// @media all and (min-width: 960px)
-// // #navbar
-// //   position: fixed
-// //   min-width: 290px
-// //   top: 0px
-// //   left: 0px
-// //   max-width: 20%
-// //   height: 100%
-// //   border: 1px solid #495057
-
-// //   ul
-// //     height: 88%
-// //     padding: 0
-// //     overflow-y: auto
-// //     overflow-x: hidden
-
-// //   li
-// //     border-top: 1px solid #495057
-// //     text-align: inherit
-// //     padding-top: 14px
-// //     padding-left: 17px
-// //     padding-bottom: 12px
-
-// //   a
-// //     color: #495057
-
-// .main-section
-//   color: #495057
-
-// // #navbar a
-// //   text-decoration: none
-
-// //   &:hover
-// //     text-decoration: underline
-// //     color: #2B3035
-// //     scale: 1.2x
-
-// header
-//   font-size: 1.6rem
-//   color: #212529
-//   max-width: 100%
-//   padding-top: 2px
-//   padding-left: 7px
-//   font-family: zillaslab, palatino, "Palatino Linotype", serif
-
-// #main-doc
-//   margin-left: 300px
-//   line-height: 1.4rem
-
-// .section-centent
-//   padding-left: 20px
-
-// .code-wrapper
-//   padding-top: 16px
-//   padding-left: 22px
-//   padding-bottom: 16px
-//   background-color: #DEE2E6
-//   color: #905
-//   border-radius: 6px
-//   font-family: consolas, "Liberation Mono", courier, monospace
-//   font-size: 1rem
-//   line-height: 1.4
-//   letter-spacing: -.0027777778rem
-//   text-rendering: optimizeSpeed
-
-// .main-section
-//   margin-bottom: 50px

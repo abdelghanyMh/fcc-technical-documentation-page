@@ -67,4 +67,27 @@
   box-shadow: none;
 }
 
+main {
+  padding: 10px;
+}
+main section::after {
+  content: " ";
+  display: block;
+  border-bottom: 1px solid #ececec;
+  padding-top: 44px;
+  margin-bottom: 40px;
+}
+main section header {
+  font-family: cursive;
+  font-size: 40px;
+  margin-bottom: 1rem;
+}
+main section > * {
+  font-family: -webkit-pictograph;
+}
+main section li {
+  line-height: 25px;
+  letter-spacing: 0.13em;
+}
+
 /*# sourceMappingURL=style.css.map */
