@@ -123,5 +123,11 @@ main section li {
     font-size: 1.5rem;
   }
 }
+/* Desktop Layout  */
+@media all and (min-width: 960px) {
+  p {
+    font-size: 1rem;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
