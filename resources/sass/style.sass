@@ -26,7 +26,8 @@ $fs-normal: 1rem
 
   transition: 0.5s cubic-bezier(0.87, -0.43, 0.47, 0.94)
 
-  // background: hsla(0, 0%, 100%, .3)
+  background: lighten($yellow, 52)
+
   .menu
     display: flex
     flex-direction: column
@@ -60,12 +61,13 @@ $fs-normal: 1rem
       &::before
         content: ''
         width: 4px
-        height: 27px
+        height: 25px
         border-left: 4px solid $yellow
         padding-left: 16px
         position: absolute
-        left: 0
+        left: 0px
         margin-top: -3px
+
 #toggle
   z-index: 999
 
@@ -105,4 +107,29 @@ main
       line-height: 25px
       letter-spacing: 0.13em
 
+/* Tablet Layout */
+@media all and (min-width: 700px)
+  #toggle
+    display: none
+  #navbar
+    overflow: initial
+    z-index: initial
 
+    position: fixed
+    left: initial
+    right: 0
+
+    width: 30%
+    height: 100%
+
+    padding: 0
+    & .menu
+      padding: 0px 0px 0px 3rem
+      .active-nav-item::before
+        left: 9px !important
+
+  main
+    padding-right: 20px
+    width: 67%
+  p
+    font-size: 1.5*$fs-normal

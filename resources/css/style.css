@@ -9,6 +9,7 @@
   background: white;
   overflow: scroll;
   transition: 0.5s cubic-bezier(0.87, -0.43, 0.47, 0.94);
+  background: #fffae4;
 }
 #navbar .menu {
   display: flex;
@@ -41,11 +42,11 @@
 #navbar .menu .active-nav-item::before {
   content: "";
   width: 4px;
-  height: 27px;
+  height: 25px;
   border-left: 4px solid #dab200;
   padding-left: 16px;
   position: absolute;
-  left: 0;
+  left: 0px;
   margin-top: -3px;
 }
 
@@ -88,6 +89,39 @@ main section > * {
 main section li {
   line-height: 25px;
   letter-spacing: 0.13em;
+}
+
+/* Tablet Layout */
+@media all and (min-width: 700px) {
+  #toggle {
+    display: none;
+  }
+
+  #navbar {
+    overflow: initial;
+    z-index: initial;
+    position: fixed;
+    left: initial;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    padding: 0;
+  }
+  #navbar .menu {
+    padding: 0px 0px 0px 3rem;
+  }
+  #navbar .menu .active-nav-item::before {
+    left: 9px !important;
+  }
+
+  main {
+    padding-right: 20px;
+    width: 67%;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
