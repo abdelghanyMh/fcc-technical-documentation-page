@@ -28,7 +28,6 @@ function toggleMenu() {
 navItems = document.querySelectorAll('.nav-link')
 
 function styleNavItem(event) {
-    console.log(event.currentTarget);
     navItems.forEach(item => {
         if (item.classList.contains('active-nav-item'))
             item.classList.remove('active-nav-item')

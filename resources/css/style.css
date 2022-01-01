@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@900&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 #navbar {
   z-index: 999;
   position: fixed;
@@ -74,7 +78,7 @@ main {
 main section::after {
   content: " ";
   display: block;
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid #A6A4A4;
   padding-top: 44px;
   margin-bottom: 40px;
 }
@@ -128,6 +132,37 @@ main section li {
   p {
     font-size: 1rem;
   }
+}
+/* footer style */
+footer {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 5.2em;
+  padding-bottom: 10px;
+  background-color: white;
+  color: black;
+}
+footer::before {
+  content: "";
+  width: 37%;
+  height: 8px;
+  display: block;
+  margin-bottom: 5px;
+  margin: 10px auto;
+  border-radius: 8px;
+  background-color: #A6A4A4;
+}
+footer svg {
+  fill: #1e3391;
+}
+footer a {
+  padding-left: 0.3em;
+}
+footer a:hover {
+  color: #3e5ad7;
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
 }
 
 /*# sourceMappingURL=style.css.map */

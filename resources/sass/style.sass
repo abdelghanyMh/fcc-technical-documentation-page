@@ -2,12 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@900&display=swap')
 $dark: #1a1a1a
 $yellow: #dab200
+$grey: #A6A4A4
 $ff-primary: cursive
 $ff-secondary: -webkit-pictograph
 
 $fs-primary: 40px
 $fs-secondary: 2rem
 $fs-normal: 1rem
+
+html
+  scroll-behavior: smooth
 
 // Mobile layout
 
@@ -94,7 +98,7 @@ main
     &::after
       content: " "
       display: block
-      border-bottom: 1px solid #ececec
+      border-bottom: 1px solid $grey
       padding-top: 44px
       margin-bottom: 40px
     header
@@ -138,3 +142,33 @@ main
 @media all and (min-width: 960px)
   p
     font-size: $fs-normal
+/* footer style */
+footer
+  justify-content: center
+  align-items: center
+  text-align: center
+  padding-top: 5.2em
+  padding-bottom: 10px
+  background-color: white
+  color: black
+  &::before
+    content: ''
+
+    width: 37%
+    height: 8px
+
+    display: block
+    margin-bottom: 5px
+    margin: 10px auto
+
+    border-radius: 8px
+    background-color: $grey
+
+  svg
+    fill: #1e3391
+  a
+    padding-left: 0.3em
+    &:hover
+      color: lighten(#1e3391 , 20%)
+      text-decoration-line: underline
+      text-decoration-style: dotted
