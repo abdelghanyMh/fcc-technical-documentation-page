@@ -6,14 +6,14 @@ A  js Documentation  Page as a [Free Code Camp](https://www.freecodecamp.org/lea
 
 ## ✨ Demo
 
-![Mobile Layout]()
-![TAblet Layout]()
+![Mobile Layout](/resources/img/mobileLayout.GIF)
+![TAblet Layout](/resources/img/tablet_layout.GIF)
 
 
 
 ## :dart: _Design inspiration_
-1. Reactjs doc web page [link](https://reactjs.org/tutorial/tutorial.html#before-we-start-the-tutorial)
-2. Pug  doc web page [link](https://pugjs.org/api/reference.html)
+1. 	:star_struck: Reactjs doc web page [link](https://reactjs.org/tutorial/tutorial.html#before-we-start-the-tutorial)
+2. :exploding_head: Pug  doc web page [link](https://pugjs.org/api/reference.html)
 
 
 ## 🚀 Usage
