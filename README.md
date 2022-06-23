@@ -2,6 +2,7 @@
 <h1 align="center">Welcome to Documentation  Page 👋</h1>
 
 A  js Documentation  Page as a [Free Code Camp](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page) front-end project where I show some infos about javascripte.
+> Build following mobile first approach.
 ### 🏠 [Homepage](https://abdelghanymh.github.io/fcc-technical-documentation-page/)
 
 ## ✨ Demo
